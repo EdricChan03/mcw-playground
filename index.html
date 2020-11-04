@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="charset" content="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Material Components Web playground</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="bundle.css">
+  </head>
+  <body>
+    <div id="app-bar-favorite-btn-tooltip" class="mdc-tooltip" role="tooltip" aria-hidden="true">
+      <div class="mdc-tooltip__surface">
+        Favorite
+      </div>
+    </div>
+    <div id="app-bar-search-btn-tooltip" class="mdc-tooltip" role="tooltip" aria-hidden="true">
+      <div class="mdc-tooltip__surface">
+        Search
+      </div>
+    </div>
+    <div id="app-bar-more-actions-btn-tooltip" class="mdc-tooltip" role="tooltip" aria-hidden="true">
+      <div class="mdc-tooltip__surface">
+        More actions
+      </div>
+    </div>
+    <div id="test-btn-tooltip" class="mdc-tooltip" role="tooltip" aria-hidden="true">
+      <div class="mdc-tooltip__surface">Hello Tooltip!</div>
+    </div>
+    <header class="mdc-top-app-bar mdc-top-app-bar--fixed">
+      <div class="mdc-top-app-bar__row">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+          <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button" aria-label="Open navigation menu">menu</button>
+          <span class="mdc-top-app-bar__title">Page title</span>
+        </section>
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+          <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-describedby="app-bar-favorite-btn-tooltip">favorite</button>
+          <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-describedby="app-bar-search-btn-tooltip">search</button>
+          <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-describedby="app-bar-more-actions-btn-tooltip">more_vert</button>
+        </section>
+      </div>
+    </header>
+    <div class="mdc-top-app-bar--fixed-adjust">
+      <div class="mdc-banner mdc-banner--centered" role="banner">
+        <div class="mdc-banner__fixed">
+          <div class="mdc-banner__content"
+               role="status"
+               aria-live="assertive">
+            <div class="mdc-banner__graphic-text-wrapper">
+              <div class="mdc-banner__text">
+                There was a problem processing a transaction on your credit card.
+              </div>
+            </div>
+            <div class="mdc-banner__actions">
+              <button type="button" class="mdc-button mdc-banner__primary-action">
+                <div class="mdc-button__ripple"></div>
+                <div class="mdc-button__label">Fix it</div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button aria-describedby="test-btn-tooltip">Button</button>
+    </div>
+    <script src="bundle.js" async></script>
+  </body>
+</html>
